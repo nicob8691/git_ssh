@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e
+set -ex
 
 #--- Configuring git
 git config --global user.name "$(whoami)@$(hostname)"
