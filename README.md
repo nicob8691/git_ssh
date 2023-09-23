@@ -11,7 +11,7 @@ git clone git@github.com:nicob8691/git_ssh.git
 ### Configure and ssh
 ```bash
 bash configure.sh
-bash ssh_keying.sh0
+bash ssh_keying.sh
 ```
 
 ### Clone
