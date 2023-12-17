@@ -5,7 +5,7 @@ Automated script for connecting and cloning git
 ```bash
 mkdir -p /home/git && cd $_
 dnf install -y git
-git clone git@github.com:nicob8691/git_ssh.git
+git clone https//github.com/nicob8691/git_ssh.git
 ```
 
 ### Configure and ssh
