@@ -3,18 +3,17 @@ Automated script for connecting and cloning git
 
 ### GitClone
 ```bash
-mkdir -p /home/git && cd $_
 dnf install -y git
 git clone https://github.com/nicob8691/git_ssh.git
+cd git_ssh
 ```
 
-### Configure and ssh
+### Configure git and ssh access
 ```bash
 bash configure.sh
-bash ssh_keying.sh
 ```
 
-### Clone
+### Clone repo
 ```bash
 bash git_clone.sh ${REPO}
 ```
