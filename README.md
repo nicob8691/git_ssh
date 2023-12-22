@@ -13,7 +13,9 @@ cd git_ssh
 bash configure.sh
 ```
 
-### Clone repo
+### Clone repos
 ```bash
-bash git_clone.sh ${REPO}
+bash git_clone.sh git_ssh
+bash git_clone.sh linux
+cd /home/git/linux
 ```
