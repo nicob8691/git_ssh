@@ -2,5 +2,5 @@
 set -ex
 
 #--- Clone repo
-cd /home/git/$1
+mkdir -p /home/git/$1 && cd
 git clone git@github.com:nicob8691/$1.git
