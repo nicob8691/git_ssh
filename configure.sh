@@ -1,6 +1,9 @@
 #!/bin/bash
 set -ex
 
+#--- Switch to ssh for pushing git_ssh remote repo
+git remote set-url --push origin git@github.com:nicob8691/git_ssh.git
+
 #--- Configure local repo /home/git
 mkdir -p /home/git
 chmod -R 777 /home/git
@@ -24,3 +27,4 @@ echo
 #--- Testing connection
 ssh -T git@github.com
 
+### END ###

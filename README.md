@@ -1,21 +1,21 @@
 # git_ssh
 Automated script for connecting and cloning git
 
-### GitClone
+### Initialisation
+Install git and clone git_ssh repo
 ```bash
 dnf install -y git
 git clone https://github.com/nicob8691/git_ssh.git
 cd git_ssh
 ```
 
-### Configure git and ssh access
+### Configuration
+Configure /home/git dir and ssh token
 ```bash
-bash configure.sh
+. configure.sh
 ```
 
 ### Clone repos
 ```bash
-bash git_clone.sh git_ssh
-bash git_clone.sh linux
-cd /home/git/linux
+. clone.sh linux
 ```
