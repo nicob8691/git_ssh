@@ -12,7 +12,8 @@ cd git_ssh
 ### Configuration
 Configure /home/git dir and ssh token
 ```bash
-. configure.sh
+. system_config.sh
+. user_config.sh
 ```
 
 ### Clone repos
