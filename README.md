@@ -17,5 +17,5 @@ Configure /home/git dir and ssh token
 
 ### Clone repos
 ```bash
-. clone.sh linux
+. clone.sh [REPONAME]
 ```
