@@ -1,16 +1,24 @@
 #!/bin/bash
 set -e
 
-#--- Set repo dir variable
-FOLDER=/home/git/$1
+for repo in "$@"
+do
 
-#--- Create repo dir
-install -d -o root -g gitusers -m 770 $FOLDER
+	#--- Set repo dir variable
+	FOLDER=/home/git/$repo
 
-#--- Clone repo
-git clone git@github.com:nicob8691/$1.git $FOLDER
+	#--- Create repo dir
+	install -d -o $(whoami) -g gitusers -m 770 $FOLDER
 
-#---
-echo "Git repo pulled by $(git config get user.name)" > $FOLDER/OWNER
+	#--- Clone repo
+	git clone git@github.com:nicob8691/$repo.git $FOLDER
+
+	#---
+	OWNER="$FOLDER/OWNER"
+	echo "Git repo pulled by $(git config get user.name)" > $OWNER
+	chown $(whoami):gitusers $OWNER
+	chmod 440 $OWNER
+
+done
 
 ### END ###
