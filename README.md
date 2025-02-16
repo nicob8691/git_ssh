@@ -1,4 +1,4 @@
-# git_ssh
+# git-ssh
 Automated script for connecting and cloning git
 
 ### Initialisation
